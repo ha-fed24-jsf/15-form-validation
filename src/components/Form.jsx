@@ -1,13 +1,30 @@
+import { useState } from 'react'
 import './Form.css'
+import Joi from 'joi'
+
+const schema = Joi.object({
+
+	name: Joi.string()
+		.min(1)
+		.required(),
+
+	email: Joi.string()
+		.email({ tlds: false })
+
+})
 
 const Form = () => {
+	const [data, setData] = useState({ name: '', email: '' })
 
 	return (
 		<div className="form">
 
 			<section className="form-field">
 				<label> Namn </label>
-				<input />
+				<input
+					value={data.name}
+					onChange={event => setData({ ...data, name: event.target.value })}
+					/>
 				<p className="error"></p>
 
 				<label> E-post </label>
