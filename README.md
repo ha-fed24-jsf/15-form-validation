@@ -1,12 +1,18 @@
-# React + Vite
+# Formulärvalidering
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Validera formulär med Joi.
 
-Currently, two official plugins are available:
+Biblioteket Joi låter oss specificera vad som är giltiga värden med hjälp av ett *schema*.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+För att köra:
 
-## Expanding the ESLint configuration
+```bash
+# byt ut mot mappen där du har kursens projekt
+cd skola/javascript2
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+git clone https://github.com/ha-fed24-jsf/15-form-validation
+cd 15-form-validation
+npm install
+code .
+npm run dev
+```
