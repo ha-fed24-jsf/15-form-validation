@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+
+body {
+	font-size: 115%;
+	font-family: "Roboto", sans-serif;
+	background-color: rgb(233, 233, 233);
+	color: rgb(25, 25, 25);
+}
+
+h1 { margin-left: 1rem; }
+
