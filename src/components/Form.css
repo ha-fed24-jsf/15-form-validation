@@ -3,7 +3,7 @@
 	padding: 0.7em;
 	display: flex;
 	flex-direction: column;
-	max-width: 18em;
+	max-width: 25em;
 	border: 1px solid #212f3d;
 	border-radius: 0.3em;
 	box-shadow: 3px 3px 6px 0 #5d6d7e;
@@ -67,5 +67,12 @@
 			background-color: var(--b2);
 			border-color: var(--b2);
 		}
+		&:disabled {
+			--disabled: rgb(173, 172, 172);
+			background-color: var(--disabled);
+			border-color: var(--disabled);
+			color: black;
+		}
+
 	}
 }
